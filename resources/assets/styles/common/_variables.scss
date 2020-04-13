@@ -1,13 +1,12 @@
 /** Colors */
 $primary:               #525ddc;
-$link:                  $primary;
+$link:                  black;
 
 /** Box Model  */
 $spacer:                2rem;
 
-$mq-responsive: true;
-
 /** Breakpoints using sass-mq */
+$mq-responsive: true;
 $mq-breakpoints: (
   mobile:  375px,
   tablet:  740px,
@@ -26,5 +25,5 @@ $hamburger-padding-y: 0;
 $hamburger-layer-width: 20px;
 $hamburger-layer-height: 2px;
 $hamburger-layer-spacing: 4px;
-$hamburger-layer-color: $primary;
+$hamburger-layer-color: black;
 $hamburger-types: (vortex);

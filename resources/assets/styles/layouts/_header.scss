@@ -1,3 +1,70 @@
-.banner .nav li {
-  @extend .navbar-item;
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem 2rem 2.5rem;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__brand-title {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 0.625rem;
+  }
+
+  &__sex {
+    display: flex;
+    font-family: calluna-sans, sans-serif;
+    letter-spacing: 0.9px;
+    font-size: 1rem;
+  }
+
+  &__sitemap-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: calluna, serif;
+    font-weight: 900;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: -0.5px;
+  }
+
+  .nav li {
+    @extend .navbar-item;
+  }
+
+  .nav-primary {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+    max-width: 1200px;
+  }
+
+  .nav-title {
+    font-family: calluna, serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: black;
+    letter-spacing: -1px;
+  }
+
+  .nav {
+    display: flex;
+    font-family: calluna-sans, sans-serif;
+    letter-spacing: 0.9px;
+    font-size: 1rem;
+    overflow: scroll;
+
+    a {
+      color: gray;
+    }
+
+    a:hover {
+      color: black;
+    }
+  }
 }
