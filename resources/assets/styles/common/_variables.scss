@@ -4,3 +4,27 @@ $link:                  $primary;
 
 /** Box Model  */
 $spacer:                2rem;
+
+$mq-responsive: true;
+
+/** Breakpoints using sass-mq */
+$mq-breakpoints: (
+  mobile:  375px,
+  tablet:  740px,
+  desktop: 980px,
+  wide:    1440px,
+  // Tweakpoints
+  desktopAd: 810px,
+  mobileLandscape: 480px
+);
+$mq-static-breakpoint: desktop;
+$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+/** Hamburger icon */
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $primary;
+$hamburger-types: (vortex);

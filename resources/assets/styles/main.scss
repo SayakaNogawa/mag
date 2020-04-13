@@ -11,6 +11,10 @@
  */
 // @import "~some-node-module";
 
+/** import 3rd party packages */
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "~sass-mq";
+
 /** Import theme styles */
 @import "common/global";
 @import "components/buttons";

@@ -1,5 +1,11 @@
 <header class="banner">
   <div class="container">
+    <button class="hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    
     <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
     <nav class="nav-primary">
       @if (has_nav_menu('primary_navigation'))
