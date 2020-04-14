@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
 
   @if (!have_posts())
     <div class="alert alert-warning">
@@ -10,8 +9,12 @@
     {!! get_search_form(false) !!}
   @endif
 
-  @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
-  @endwhile
+  @include('partials.category-feature')
+  @include('partials.category-collection')
+  @include('partials.category-blog')
+  @include('partials.category-trend')
+  @include('partials.category-coordinate')
+  @include('partials.category-interview')
+
 
 @endsection
