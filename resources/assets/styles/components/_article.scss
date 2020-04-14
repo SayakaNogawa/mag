@@ -1,0 +1,32 @@
+.article {
+  display: flex;
+  width: 60vw;
+  padding-bottom: $spacer;
+
+  &__left {
+    width: 30%;
+    padding-right: $spacer;
+  }
+
+  &__picture img {
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+  }
+
+  h2 {
+    @extend .sub-title-japanese;
+
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+
+  &__entry-summary {
+    @extend .discription-japanese;
+  }
+
+  &__right {
+    width: 70%;
+    padding-right: $spacer--wide;
+  }
+}
