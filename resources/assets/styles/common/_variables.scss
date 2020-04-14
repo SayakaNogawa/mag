@@ -1,9 +1,10 @@
 /** Colors */
-$primary:               #525ddc;
+$primary:               #da2f76;
 $link:                  black;
 
 /** Box Model  */
 $spacer:                2rem;
+$spacer--wide:          4rem;
 
 /** Breakpoints using sass-mq */
 $mq-responsive: true;
