@@ -97,7 +97,7 @@ Container::getInstance()
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
  */
-function wpdocs_custom_excerpt_length( $length ) {
+function wpdocs_custom_excerpt_length($length) {
     return 50;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
@@ -108,7 +108,14 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
  * @param string $more "Read more" excerpt string.
  * @return string (Maybe) modified "read more" excerpt string.
  */
-function wpdocs_excerpt_more( $more ) {
+function wpdocs_excerpt_more($more) {
     return '...';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+/** Set archive post query */
+function set_query($category_name, $posts_per_page) {
+    $args = array('category_name' => $category_name, 'posts_per_page' => $posts_per_page);
+    $the_query = new WP_Query($args);
+    return $the_query;
+}
