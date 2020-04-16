@@ -16,5 +16,4 @@
   @include('partials.category-coordinate')
   @include('partials.category-interview')
 
-
 @endsection
