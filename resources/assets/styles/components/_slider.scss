@@ -1,0 +1,81 @@
+@import "~sass-mq";
+
+.slider {
+  &__inner {
+    padding: $spacer 1rem;
+
+    @include mq($from: tablet) {
+      display: grid;
+      grid-template-areas: "left right";
+      align-items: flex-start;
+      margin: $spacer--wide auto;
+      max-width: 1200px;
+    }
+  }
+
+  &__single--left {
+    grid-area: left;
+  }
+
+  &__single--right {
+    grid-area: right;
+    padding-left: $spacer;
+  }
+
+  &__columns--left {
+    grid-area: left;
+  }
+
+  &__columns--right {
+    grid-area: right;
+  }
+
+  &__single {
+    padding-bottom: 2rem;
+
+    @include mq($from: tablet) {
+      position: sticky;
+      top: 0;
+    }
+
+    img {
+      max-height: 80vh;
+      object-fit: cover;
+    }
+
+    h2 {
+      @extend .sub-title-japanese;
+    }
+
+    span:last-child {
+      display: none;
+    }
+
+    .entry__title a {
+      font-size: 6rem;
+      letter-spacing: -6px;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__columns {
+    @include mq($from: tablet) {
+      columns: 2 11rem;
+      column-fill: auto;
+    }
+
+    h2 {
+      @extend .sub-title-japanese;
+
+      font-size: 1.3125rem;
+    }
+
+    article {
+      padding-bottom: 4rem;
+
+      @include mq($from: tablet) {
+        break-inside: avoid-column;
+      }
+    }
+  }
+}
