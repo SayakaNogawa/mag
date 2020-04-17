@@ -1,0 +1,11 @@
+.footer {
+  display: grid;
+
+  .footer__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: solid 1px black;
+    padding-top: 2rem;
+  }
+}
