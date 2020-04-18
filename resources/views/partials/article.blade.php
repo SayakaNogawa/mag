@@ -5,7 +5,7 @@
     </picture>
   </div>
   <div class="article__right">
-    <h2 class="article__entry-title sub-title-japanese--small"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
+    <h2 class="article__entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
     <div class="article__entry-summary">
       @php the_excerpt() @endphp
     </div>
