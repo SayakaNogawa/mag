@@ -1,13 +1,14 @@
-<div class="interview">
-  <div class="interview__wrapper">
-    <div class="interview__title">
+<div class="card">
+  <div class="container card__container">
+    <div class="title card__title">
       <h1 class="title">Interview</h1>
     </div>
-    <div class="interview__columns">
-      @php $args = array('category_name' => 'interview', 'posts_per_page' => 3) @endphp
-      @php $the_query = new WP_Query($args) @endphp
+    <div class="card__columns">
+      @php $the_query = set_category_query('interview', 3) @endphp
       @while ($the_query->have_posts()) @php $the_query->the_post() @endphp
-        @include('partials.card')
+        <div class="card__article-container">
+          @include('partials.article-inside')
+        </div>
       @endwhile
       @php wp_reset_postdata() @endphp
     </div>
