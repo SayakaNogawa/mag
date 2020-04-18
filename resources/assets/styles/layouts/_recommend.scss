@@ -1,0 +1,36 @@
+@import "~sass-mq";
+
+.recommend {
+  .recommend__line {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .recommend__article-container {
+    @include mq($from: tablet) {
+      display: flex;
+    }
+  }
+
+  &__section-title {
+    margin: 20px;
+    text-align: center;
+
+    @include mq($from: tablet) {
+      position: sticky;
+      top: 10%;
+      flex: 0 0 40%;
+      height: 100vh;
+      text-align: left;
+    }
+  }
+
+  &__posts-wrapper {
+    margin: 2rem 0 0;
+
+    @include mq($from: tablet) {
+      flex: 0 0 60%;
+      columns: 2 15rem;
+    }
+  }
+}
