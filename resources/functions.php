@@ -113,9 +113,33 @@ function wpdocs_excerpt_more($more) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
-/** Set archive post query */
-function set_query($category_name, $posts_per_page) {
+/** Set archive posts query */
+function set_category_query($category_name, $posts_per_page) {
     $args = array('category_name' => $category_name, 'posts_per_page' => $posts_per_page);
-    $the_query = new WP_Query($args);
-    return $the_query;
+    $category_query = new WP_Query($args);
+    return $category_query;
 }
+
+/** Set recommend posts query */
+function set_recommend_query() {
+    $post_id = get_the_ID();
+    $categories = get_the_category($post_id);
+    $ids = array();
+
+    if (!empty($categories) && is_wp_error($categories)) {
+        foreach ($categories as $category) {
+            array_push($ids, $category->term_id);
+        }
+    }
+
+    $current_post_type = get_post_type($post_id);
+    $args = array( 
+        'category__in'   => $ids,
+        'post_type'      => $current_post_type,
+        'post_not_in'    => array($post_id),
+        'posts_per_page'  => '5'
+     );
+     $recommend_query = new WP_Query($args);
+     return $recommend_query;
+}
+
