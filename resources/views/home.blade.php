@@ -10,9 +10,9 @@
   @endif
 
   @include('partials.category-feature')
-  @include('partials.category-collection')
   @include('partials.category-blog')
   @include('partials.category-trend')
+  @include('partials.category-collection')
   @include('partials.category-coordinate')
   @include('partials.category-interview')
 
