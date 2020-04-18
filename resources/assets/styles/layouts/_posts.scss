@@ -1,0 +1,29 @@
+.posts {
+  display: flex;
+
+  .posts__container {
+    padding-left: 2rem;
+    border-left: solid 1px lightgray;
+  }
+
+  .posts__title {
+    flex: 0 0 62.5%;
+    max-width: 62.5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .posts__column {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+
+  p {
+    max-width: 62.5%;
+    color: #000;
+  }
+}
+
+.wp-block-image img {
+  margin-left: 12.5%;
+}
