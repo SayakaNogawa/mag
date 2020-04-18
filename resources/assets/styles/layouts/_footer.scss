@@ -1,11 +1,19 @@
 .footer {
   display: grid;
 
-  .footer__copyright {
+  .footer__menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  .footer__menu-text {
+    padding: 0 1rem;
+  }
+
+  .footer__copyright-container {
     border-top: solid 1px black;
     padding-top: 2rem;
+    align-items: center;
   }
 }
+
