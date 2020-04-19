@@ -3,7 +3,7 @@
 .recommend {
   .recommend__line {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 4rem;
   }
 
   .recommend__article-container {
@@ -12,25 +12,52 @@
     }
   }
 
-  &__section-title {
-    margin: 20px;
+  &__title-contsiner {
+    margin-bottom: 4rem;
     text-align: center;
 
     @include mq($from: tablet) {
       position: sticky;
       top: 10%;
-      flex: 0 0 40%;
+      flex: 0 0 30%;
       height: 100vh;
       text-align: left;
+      margin-right: 1.25rem;
     }
   }
 
   &__posts-wrapper {
-    margin: 2rem 0 0;
+    margin-top: 1.25rem;
 
     @include mq($from: tablet) {
-      flex: 0 0 60%;
+      flex: 0 0 70%;
       columns: 2 15rem;
+      column-gap: 0;
+      margin: 0;
     }
+  }
+
+  .recommend__post {
+    margin-right: 1.25rem;
+    padding-bottom: 4rem;
+
+    @include mq($from: tablet) {
+      border-left: solid 1px #bcbebf;
+      padding-left: 1.25rem;
+      break-inside: avoid-column;
+    }
+  }
+
+  .recommend__category {
+    font-family: calluna-sans, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding-bottom: 10px;
+  }
+
+  .recommend__post-title {
+    padding-top: 0.75rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
   }
 }
