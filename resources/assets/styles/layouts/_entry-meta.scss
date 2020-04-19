@@ -1,0 +1,15 @@
+.entry-meta {
+  margin: 1.25rem 0;
+  font-family: calluna-sans, sans-serif;
+  letter-spacing: 0.9px;
+  font-size: 1rem;
+
+  .entry-meta__category {
+    text-transform: uppercase;
+  }
+
+  .entry-meta__author {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-size: 0.875rem;
+  }
+}
