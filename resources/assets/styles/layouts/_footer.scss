@@ -1,12 +1,14 @@
 .footer {
-  display: grid;
-
   .footer__menu {
-    display: flex;
-    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+
+    @include mq($from: desktop) {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
-  .footer__menu-text {
+  .footer__menu-item {
     padding: 0 1rem;
   }
 
