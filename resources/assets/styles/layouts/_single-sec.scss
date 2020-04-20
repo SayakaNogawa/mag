@@ -1,0 +1,37 @@
+.single-sec {
+  height: 60vh;
+  background-color: #f4efe7;
+
+  .single-sec__container {
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .single-sec__title {
+    color: #152568;
+    font-weight: bold;
+    font-size: 3rem;
+
+    @include mq($from: tablet) {
+      font-size: 5rem;
+      letter-spacing: -2px;
+    }
+  }
+
+  .single-sec__discription {
+    font-size: 1rem;
+    padding: 0 2rem;
+
+    @include mq($from: tablet) {
+      margin-top: 4rem;
+    }
+  }
+
+  .single-sec__readmore {
+    margin-top: 10rem;
+
+    @include mq($from: tablet) {
+      margin-top: 4rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.article {
+  margin: auto;
+
+  .article__container {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .article__left {
+    width: 20%;
+
+    @include mq($from: tablet) {
+      width: 20%;
+      padding-right: 0.75rem;
+    }
+  }
+
+  .article__right {
+    width: 80%;
+    margin-left: 0.75rem;
+
+    @include mq($from: tablet) {
+      width: 80%;
+    }
+  }
+
+  .article__picture img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+
+    @include mq($from: tablet) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  .article__entry-title {
+    font-size: 1rem;
+
+    @include mq($from: tablet) {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  }
+
+  .article__entry-summary {
+    font-size: 0.75rem;
+  }
+}

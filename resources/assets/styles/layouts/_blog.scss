@@ -1,0 +1,15 @@
+.blog-archive {
+  .blog-archive__container {
+    border-top: solid 1px #bcbebf;
+    border-bottom: solid 1px #bcbebf;
+  }
+
+  .blog-archive__inner {
+    padding: 0.75rem;
+
+    @include mq($from: tablet) {
+      columns: 2 17rem;
+      break-inside: avoid-column;
+    }
+  }
+}
