@@ -1,0 +1,47 @@
+.feature {
+  margin-bottom: 4rem;
+
+  .feature__container {
+    margin-top: 0;
+
+    @include mq($from: tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 2rem 0;
+    }
+  }
+
+  .feature__entry-title {
+    font-weight: lighter;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+
+    @include mq($from: tablet) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .feature__entry-meta {
+    margin: 0.65rem 2rem;
+  }
+
+  .feature__entry-summary {
+    margin: 0 2rem;
+  }
+
+  .feature__left {
+    @include mq($from: tablet) {
+      width: 40%;
+      padding-right: 2rem;
+    }
+  }
+
+  .feature__right {
+    @include mq($from: tablet) {
+      width: 60%;
+      margin-right: 2rem;
+    }
+  }
+}
