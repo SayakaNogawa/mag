@@ -1,0 +1,60 @@
+.site-menu {
+  opacity: 0;
+  margin: -60px 0 0 200px;
+
+  .site-menu__container {
+    margin: 0 2rem;
+
+    @include mq($from: tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .site-menu__item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: calluna-sans, sans-serif;
+    letter-spacing: 0.9px;
+    font-size: 1rem;
+    padding-top: 0.75rem;
+
+    @include mq($from: desktop) {
+      justify-content: flex-end;
+    }
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: #bcbebf;
+    }
+  }
+
+  .site-menu__item {
+    padding-right: 0.75rem;
+  }
+
+  .site-menu__button-wrapper {
+    text-align: center;
+    padding-top: 0.75rem;
+  }
+}
+
+.site-menu--active {
+  animation: fadeIn ease 0.5s;
+  opacity: 1;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
