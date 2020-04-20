@@ -1,0 +1,58 @@
+.nav-category {
+  margin: auto;
+  padding: 2.5rem 0;
+  text-align: center;
+
+  @include mq($from: desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-category__title {
+    font-family: calluna, serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: black;
+    letter-spacing: -1px;
+    margin-bottom: 0.75rem;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    font-family: calluna-sans, sans-serif;
+    letter-spacing: 0.9px;
+    font-size: 1rem;
+
+    @include mq($from: desktop) {
+      justify-content: flex-end;
+    }
+
+    a {
+      color: #bcbebf;
+    }
+
+    a:hover {
+      color: #000;
+    }
+  }
+
+  .nav-category__container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav ul {
+    display: inline-table;
+    max-width: 100%;
+  }
+
+  .nav li {
+    @extend .navbar-item;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
