@@ -1,0 +1,21 @@
+.content ul,
+.content li {
+  list-style: none;
+  margin: 0;
+}
+
+.content ul:not(:last-child) {
+  margin: 0;
+}
+
+.content h2:not(:first-child) {
+  margin-top: 0;
+}
+
+p {
+  font-family: a-otf-jun-pro, sans-serif;
+}
+
+a:hover {
+  color: #bcbebf;
+}

@@ -1,29 +1,32 @@
 .header {
-  &__top {
+  .header__top {
     display: flex;
     justify-content: space-between;
-    padding: 0.625rem 2rem 2.5rem;
+    vertical-align: baseline;
+    padding: 0.625rem 2rem 0;
   }
 
-  &__logo {
+  .header__logo {
     display: flex;
   }
 
-  &__brand-title {
-    font-family: futura-pt, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+  .header__brand-title {
+    font-size: 2rem;
     padding-left: 0.625rem;
   }
 
-  &__sex {
+  .header__sex {
     display: flex;
     font-family: calluna-sans, sans-serif;
     letter-spacing: 0.9px;
     font-size: 1rem;
   }
 
-  &__sitemap-item {
+  .header__sex-item {
+    padding: 0.75rem;
+  }
+
+  .header__sitemap-item {
     display: flex;
     justify-content: space-between;
     font-family: calluna, serif;
@@ -31,40 +34,5 @@
     font-size: 1rem;
     color: black;
     letter-spacing: -0.5px;
-  }
-
-  .nav li {
-    @extend .navbar-item;
-  }
-
-  .nav-primary {
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 2.5rem 0;
-  }
-
-  .nav-title {
-    font-family: calluna, serif;
-    font-weight: 900;
-    font-size: 1.25rem;
-    color: black;
-    letter-spacing: -1px;
-  }
-
-  .nav {
-    display: flex;
-    font-family: calluna-sans, sans-serif;
-    letter-spacing: 0.9px;
-    font-size: 1rem;
-    overflow: scroll;
-
-    a {
-      color: gray;
-    }
-
-    a:hover {
-      color: black;
-    }
   }
 }

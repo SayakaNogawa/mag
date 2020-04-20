@@ -1,29 +1,58 @@
 .posts {
-  display: flex;
-
-  .posts__container {
-    padding-left: 2rem;
-    border-left: solid 1px lightgray;
-  }
-
-  .posts__title {
-    flex: 0 0 62.5%;
-    max-width: 62.5%;
-    font-size: 2.5rem;
-    font-weight: bold;
+  @include mq($from: tablet) {
+    display: flex;
   }
 
   .posts__column {
-    flex: 0 0 12.5%;
-    max-width: 12.5%;
+    margin: 0 0.75rem;
+
+    @include mq($from: tablet) {
+      text-align: right;
+      margin: 0 0.75rem 0 1.25rem;
+      flex: 0 0 12.5%;
+      max-width: 12.5%;
+    }
   }
 
-  p {
-    max-width: 62.5%;
-    color: #000;
+  .posts__container {
+    margin: 0 0.75rem;
+
+    @include mq($from: tablet) {
+      padding-left: 1.25rem;
+      border-left: solid 1px #bcbebf;
+    }
+  }
+
+  .posts__title {
+    margin: 4rem 0 2rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+
+    @include mq($from: tablet) {
+      margin: 6rem 0 4rem;
+      font-size: 2.5rem;
+      flex: 0 0 72.5%;
+      max-width: 72.5%;
+    }
+
+    @include mq($from: desktop) {
+      flex: 0 0 62.5%;
+      max-width: 62.5%;
+    }
+  }
+
+  .posts__content p {
+    @include mq($from: tablet) {
+      max-width: 62.5%;
+      color: #000;
+    }
   }
 }
 
 .wp-block-image img {
-  margin-left: 12.5%;
+  margin: 1.25rem 0;
+
+  @include mq($from: tablet) {
+    margin-left: 12.5%;
+  }
 }

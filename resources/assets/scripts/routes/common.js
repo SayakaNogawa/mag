@@ -3,6 +3,7 @@ export default {
     // JavaScript to be fired on all pages
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
+      $('.site-menu').toggleClass('site-menu--active'); 
     });
   },
   finalize() {

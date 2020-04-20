@@ -1,4 +1,14 @@
 .card {
+  box-shadow: none;
+  padding: 0 0.75rem;
+
+  .card__title {
+    text-align: center;
+    color: #152568;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+
   .card__columns {
     columns: 3 18rem;
     column-fill: auto;

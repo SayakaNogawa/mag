@@ -2,7 +2,6 @@
   <div class="container slider__container">
     <div class="slider__head-container container-flex-row">
       <h1 class="title--big slider__title slider__title--left">Coordinate</h1>
-      <p class="slider__readmore">READ MORE</p>
     </div>
     <div class="slider__inner">
       @php $the_query = set_category_query('coordinate', 7) @endphp
@@ -20,7 +19,6 @@
       @endwhile
       </div>
       @php wp_reset_postdata() @endphp
-
     </div>
   </div>
 </div>

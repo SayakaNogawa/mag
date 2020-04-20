@@ -1,26 +1,38 @@
 .title {
   font-family: calluna, serif;
   font-weight: 900;
+  color: #000;
+}
+
+.title--big {
+  @extend .title;
+
   font-size: 2.5rem;
-  color: black;
   letter-spacing: -2px;
+}
+
+.title--small {
+  @extend .title;
+
+  font-size: 1.5rem;
+  letter-spacing: -1px;
 }
 
 .article-title-japanese {
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: 100;
   font-size: 2rem;
-  letter-spacing: -0.9px;
 }
 
 .sub-title-japanese {
   font-family: source-han-sans-japanese, sans-serif;
+  font-size: 1.25rem;
   font-weight: 500;
+  letter-spacing: -0.9px;
 }
 
 .discription-japanese {
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: 200;
   font-size: 0.75rem;
-  letter-spacing: 0.6px;
 }

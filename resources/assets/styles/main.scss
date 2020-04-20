@@ -17,13 +17,26 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/title";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/container";
+@import "components/site-menu";
+@import "components/nav-category";
+@import "components/readmore";
+@import "layouts/article";
+@import "layouts/slider";
+@import "layouts/feature";
+@import "layouts/entry-meta";
+@import "layouts/card";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/single-sec";
+@import "layouts/recommend";
+@import "layouts/blog";

@@ -1,15 +1,21 @@
 .entry-meta {
-  margin: 1.25rem 0;
   font-family: calluna-sans, sans-serif;
   letter-spacing: 0.9px;
   font-size: 1rem;
 
   .entry-meta__category {
     text-transform: uppercase;
+    font-weight: bold;
   }
+}
 
-  .entry-meta__author {
-    font-family: source-han-sans-japanese, sans-serif;
-    font-size: 0.875rem;
+.entry-meta__author {
+  font-family: calluna, serif;
+  margin: 4rem 0;
+  color: #000;
+  font-weight: bold;
+
+  a {
+    border-bottom: solid 1px #000;
   }
 }
